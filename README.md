@@ -31,7 +31,7 @@ This project is a Machine Learning model designed to predict food delivery time 
 - `src/preprocessing.py`: The function to clean the data and apply One-Hot Encoding.
 - `src/train.py`: The script to train the Random Forest and save the model.
 - `src/predict.py`: The script to load the model and predict the delivery time for a new order.
-- `models/`: The folder where the trained model and column list are saved.
+- `models/`: The folder where the trained model and column list are saved. (generated after running train.py; not versioned in this repository)
 
 ## REQUIREMENTS AND USAGE
 
