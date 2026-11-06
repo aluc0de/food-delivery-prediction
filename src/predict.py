@@ -26,11 +26,12 @@ class DeliveryOrder:
     Delivery_Priority: str
 
 
-#função de previsão (recebe o objeto DeliveryOrder agora)
+#recebe o objeto DeliveryOrder e retorna a previsão em tempo
 def predict_delivery_time(order: DeliveryOrder):
     model = joblib.load('../models/random_forest_model.pkl')
     model_columns = joblib.load('../models/model_columns.pkl')
-
+    
+    #transforma em um dataframe, revisa e alinha as colunas pro RandomForest não travar
     order_dict = asdict(order)
     
     df_new = pd.DataFrame([order_dict])
@@ -40,7 +41,7 @@ def predict_delivery_time(order: DeliveryOrder):
     prediction = model.predict(df_new_encoded)[0]
     return prediction
 
-
+#easter egg
 def show_batcave():
     yellow = "\033[1;33m"
     white = "\033[1;37m"
@@ -53,6 +54,7 @@ def show_batcave():
 
 #bloco principal
 if __name__ == "__main__":
+    #verifica se foi passado argumento no terminal para o easter egg rodar
     if len(sys.argv) > 1:
         command = sys.argv[1].lower()
 
