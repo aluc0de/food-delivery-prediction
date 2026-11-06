@@ -4,7 +4,7 @@
 
 If you're reading this, you probably just stumbled upon this repository. Either way, welcome!
 
-This project is a Machine Learning model designed to predict food delivery time based on order characteristics, traffic, and weather conditions. I built this from scratch as part of my journey through he **Associate AI Engineer for Developers** Career Track on DataCamp. My goal was to apply the concepts I learned in a real-world-like scenario, and to think like an engineer when dealing with data.
+This project is a Machine Learning model designed to predict food delivery time based on order characteristics, traffic, and weather conditions. I built this from scratch as part of my journey through the **Associate AI Engineer for Developers** Career Track on DataCamp. My goal was to apply the concepts I learned in a real-world-like scenario, and to think like an engineer when dealing with data.
 
 ## FEATURES
 
