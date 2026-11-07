@@ -23,7 +23,7 @@ This project is a Machine Learning model designed to predict food delivery time 
 
 **The One-Hot Encoding Explosion:** Variables like Weather and Vehicle Type needed to become numbers. The `pd.get_dummies` function transformed 19 features into 46 columns. To avoid errors when making predictions, I saved the model columns to a `.pkl` file and used `reindex` to align the new data.
 
-**The Smart App Control Blockade:** Windows 11's Smart App Control blocked DLL files from Pandas and Scikit-learn. I had to disable it to run the environment. It was a real-world reminder that engineering is often about fighting the environment as much as writing code.
+**The Smart App Control Blockade:** Windows 11's Smart App Control blocked DLL files from Pandas and Scikit-learn. I initially tried downgrading the libraries to avoid altering system security, but I just ended up having to disable Smart App anyway because the project did not work otherwise.
 
 ## PROJECT FILES
 
